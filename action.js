@@ -1,11 +1,12 @@
 
+const { Octokit } = require("octokit");
 
-
-const octokit = new Octokit({ auth: `personal-access-token123` });
+const octokit = new Octokit({ auth: `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` });
 
 
 await octokit.rest.issues.create({
-    owner: "octocat",
-    repo: "hello-world",
-    title: "Hello world from " + slug,
-  });
+  owner: "kkj",
+  repo: "teach-create-issues-action",
+  title: "today",
+  body: "今天xxxxxxx了"
+});
